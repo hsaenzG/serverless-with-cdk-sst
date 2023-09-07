@@ -17,21 +17,27 @@ El cual puede ser integrado a un proceso de CI/CD facilmente.
 
 ## Despliegue
 Paso 1 - Instalación
-` $ npm install
-
+```
+$ npm install
+```
 Paso 2 - Despliega en modo dev
-` $ npm run dev
-
+```
+$ npm run dev
+```
 Paso 3 - Prueba los endpoints (en los outputs del paso anterior encontrarlas la URL de tu API desplegada.
 Paso 4 - Despliegue modo prod
-` npx sst deploy --stage prod
+```
+$ npx sst deploy --stage prod
+```
 Paso 5 - ingresa a tu cuenta de AWS y verifica que la VPC se creo al igual que la instancia de EC2
 
 ## Limpieza
 1. Elimina los recursos creados en este ejercicio
-` $ npx sst remove
-
+```
+$ npx sst remove
+```
 2. Elimina el ambiente de producción
-` $ npx sst remove --stage prod
-
+```
+$ npx sst remove --stage prod
+```
 
